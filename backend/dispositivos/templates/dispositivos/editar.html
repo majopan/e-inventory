@@ -1,0 +1,13 @@
+{% extends 'base_generic.html' %}
+
+{% block content %}
+  <h2>Editar Dispositivo: {{ dispositivo.nombre }}</h2>
+
+  <form method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Actualizar</button>
+  </form>
+
+  <a href="{% url 'lista_dispositivos' %}">Volver a la lista de dispositivos</a>
+{% endblock %}
