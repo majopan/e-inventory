@@ -1,0 +1,38 @@
+/* Contenedor de la tarjeta única */
+.stat-card {
+    background-color: #353a50; /* Color de fondo de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 30px; /* Aumenta el padding para más espacio interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    width: 300px; /* Ancho fijo para la tarjeta */
+    margin-left: 10px; /* Reduce el margen izquierdo para acercarla a la gráfica */
+    height: 100%; /* Ocupa toda la altura disponible */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribuye el espacio entre los ítems */
+}
+
+/* Estilos para cada ítem dentro de la tarjeta */
+.stat-item {
+    margin-bottom: 20px; /* Aumenta el espacio entre cada ítem */
+    text-align: center; /* Centra el texto */
+}
+
+.stat-item:last-child {
+    margin-bottom: 0; /* Elimina el margen inferior del último ítem */
+}
+
+/* Estilos para el título de cada ítem */
+.stat-item h5 {
+    font-size: 18px; /* Aumenta el tamaño del título */
+    color: #61dafb; /* Color del título */
+    margin-bottom: 10px; /* Aumenta el espacio entre el título y el valor */
+}
+
+/* Estilos para el valor de cada ítem */
+.stat-item h1 {
+    font-size: 28px; /* Aumenta el tamaño del valor */
+    color: #fff; /* Color del valor */
+    margin: 0; /* Elimina el margen predeterminado */
+    font-weight: bold; /* Hace el valor más destacado */
+}

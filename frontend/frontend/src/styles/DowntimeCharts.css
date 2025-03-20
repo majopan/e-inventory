@@ -1,0 +1,95 @@
+/* Contenedor principal de las gráficas de tiempo de inactividad */
+.downtime-charts-container {
+    background-color: #353a50;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 0; /* Sube el contenedor 20px (cambia a 0 o un valor negativo) */
+    width: 50%; /* Reduce el ancho al 50% (ajusta este valor según sea necesario) */
+    margin-left: 10px; /* Mueve el contenedor hacia la izquierda */
+    margin-right: auto; /* Mantén el margen derecho automático */
+}
+
+.downtime-charts-container h3 {
+    text-align: center;
+    color: #61dafb;
+    margin-bottom: 15px;
+}
+
+/* Contenedor para las gráficas y la información */
+.charts-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Espacio entre los elementos */
+}
+
+/* Estilos para la gráfica de pastel */
+.chart-container {
+    flex: 1;
+    background-color: #2b2f42;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%; /* Reduce el ancho al 70% */
+    margin: 0 auto; /* Centra la gráfica */
+}
+
+/* Lista de causas con puntos */
+.causes-list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los ítems */
+    width: 70%; /* Reduce el ancho al 70% */
+    margin: 0 auto; /* Centra la lista */
+}
+
+.cause-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el punto, el valor y la etiqueta */
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; /* Hace que el punto sea redondo */
+}
+
+.cause-value {
+    font-size: 16px;
+    color: #61dafb;
+    font-weight: bold;
+}
+
+.cause-label {
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Contenedor de porcentajes con íconos */
+.percentage-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los porcentajes */
+    width: 70%; /* Reduce el ancho al 70% */
+    margin: 0 auto; /* Centra el contenedor */
+}
+
+.percentage-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre el ícono y el valor */
+}
+
+.percentage-icon {
+    font-size: 20px;
+    color: #61dafb;
+}
+
+.percentage-value {
+    font-size: 24px;
+    color: #61dafb;
+    font-weight: bold;
+}

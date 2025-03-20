@@ -1,0 +1,13 @@
+    /* Inventory.css */
+
+    .Devices-container {
+        display: flex;
+        height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+        width: 100vw; /* Asegura que ocupe toda la anchura de la pantalla */
+    }
+    
+    .Devices-content {
+        flex: 1; /* Esto hace que el contenido ocupe el resto del espacio */
+        background-color: #f4f4f4;
+    }
+    

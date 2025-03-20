@@ -1,0 +1,221 @@
+.inventory-containert {
+    min-height: 100vh;
+    width: calc(100% - 40px); /* Ajusta el ancho para evitar superposiciones */
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    background-color: #2b2f42;
+    margin-left: 20px; /* Mantén el margen izquierdo */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea todo a la izquierda */
+    padding: 20px; /* Añade un padding general para evitar que el contenido tope con los bordes */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.main-content {
+    width: 100%; /* Ocupa el 100% del ancho */
+    padding: 2rem;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.metric-cardst {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.metric-cardt {
+    background-color: #252836;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.metric-titlet {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-bottom: 0.5rem;
+}
+
+.metric-valuet {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.filters-containert {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.search-containert {
+    position: relative;
+    flex-grow: 1;
+}
+
+.search-inputt {
+    width: 100%;
+    padding: 0.5rem 1rem 0.5rem 2.5rem;
+    background-color: #252836;
+    border: 1px solid #374151;
+    border-radius: 0.375rem;
+    color: #ffffff;
+}
+
+.search-icont {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+.filter-select {
+    padding: 0.5rem;
+    background-color: #252836;
+    border: 1px solid #374151;
+    border-radius: 0.375rem;
+    color: #ffffff;
+}
+
+.table-containert {
+    background-color: #252836;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    overflow-x: auto; /* Permite el desplazamiento horizontal en pantallas pequeñas */
+    max-width: 100%; /* Asegura que la tabla no se desborde en pantallas pequeñas */
+}
+
+.inventory-tablet {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    min-width: 600px; /* Establece un ancho mínimo para la tabla */
+}
+
+.inventory-tablet th,
+.inventory-tablet td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.inventory-tablet th {
+    background-color: #1f2937;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    color: #9ca3af;
+}
+
+.inventory-tablet tr:nth-child(even) {
+    background-color: #2d3748;
+}
+
+.delete-buttont {
+    background: none;
+    border: none;
+    color: #ef4444;
+    cursor: pointer;
+}
+.action-buttonst {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.action-buttont {
+    background-color: #4f46e5;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.action-buttont:hover {
+    background-color: #4338ca;
+}
+
+.chart-containert {
+    width: 100%;
+    background-color: #252836;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.chart-titlet {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.paginationt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #1f2937;
+}
+
+.pagination-infot {
+    color: #9ca3af;
+}
+
+.pagination-buttonst {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.pagination-buttont {
+    background-color: #374151;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    cursor: pointer;
+}
+
+.pagination-buttont:disabledt {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .metric-cardst {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+
+    .filters-containert {
+        flex-direction: column; /* Apila los filtros verticalmente */
+    }
+
+    .action-buttonst {
+        flex-wrap: wrap; /* Permite que los botones se envuelvan en varias líneas */
+    }
+
+    .inventory-tablet {
+        min-width: 100%; /* Asegura que la tabla ocupe el 100% del ancho en pantallas pequeñas */
+    }
+
+    .inventory-tablet th,
+    .inventory-tablet td {
+        padding: 0.5rem; /* Reduce el padding para pantallas pequeñas */
+        font-size: 0.875rem; /* Reduce el tamaño de la fuente */
+    }
+}
+
+@media (max-width: 480px) {
+    .inventory-tablet th:nth-child(3),
+    .inventory-tablet td:nth-child(3),
+    .inventory-tablet th:nth-child(4),
+    .inventory-tablet td:nth-child(4) {
+        display: none; /* Oculta columnas menos importantes en pantallas muy pequeñas */
+    }
+}

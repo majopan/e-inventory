@@ -1,0 +1,127 @@
+.left-section-container {
+    width: 100%;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    margin-left: 340px;
+  }
+  
+  .header-LeftFloorSection {
+    background-color: #ff8c00;
+    padding: 4px 8px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+  
+  .asterisk-LeftFloorSection {
+    font-size: 16px;
+  }
+  
+  .id-number-LeftFloorSection {
+    font-size: 12px;
+    margin: 8px 0;
+  }
+  
+  .section-LeftFloorSection {
+    margin-bottom: 10px;
+  }
+  
+  .section-label-LeftFloorSection {
+    font-size: 12px;
+    font-weight: bold;
+    margin: 4px 0;
+  }
+  
+  .grid-container-LeftFloorSection {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  
+  .grid-row-LeftFloorSection {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: 2px;
+    align-items: center;
+  }
+  
+  .cell-LeftFloorSection {
+    border: 1px solid #000;
+    padding: 2px 4px;
+    font-size: 11px;
+    text-align: center;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .blue-LeftFloorSection {
+    background-color: #add8e6;
+  }
+  
+  .red-LeftFloorSection {
+    background-color: #ff0000;
+    color: white;
+  }
+  
+  .yellow-LeftFloorSection {
+    background-color: #ffd700;
+  }
+  
+  .orange-LeftFloorSection {
+    background-color: #ffa500;
+  }
+  
+  .purple-LeftFloorSection {
+    background-color: #800080;
+    color: white;
+  }
+  
+  .black-LeftFloorSection {
+    background-color: #000;
+  }
+  
+  .sub-labels-LeftFloorSection {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    margin-top: 2px;
+  }
+  
+  .label-text-LeftFloorSection {
+    font-size: 11px;
+    margin-left: 4px;
+  }
+  
+  .number-label-LeftFloorSection {
+    font-size: 11px;
+    margin-top: 2px;
+  }
+  
+  .sub-label-LeftFloorSection {
+    font-size: 11px;
+    margin-top: 2px;
+  }
+  
+  .bottom-labels-LeftFloorSection {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    margin-top: 2px;
+    padding: 0 20%;
+  }
+  
+  @media (max-width: 1200px) {
+    .grid-row-LeftFloorSection {
+      grid-template-columns: repeat(10, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .grid-row-LeftFloorSection {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
+  
+  

@@ -1,0 +1,66 @@
+    /* Inventory.css */
+
+    .Devices-container {
+        display: flex;
+        height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+        width: 100vw; /* Asegura que ocupe toda la anchura de la pantalla */
+    }
+    
+    .Devices-content {
+        flex: 1; /* Esto hace que el contenido ocupe el resto del espacio */
+        background-color: #f4f4f4;
+    }
+    
+    .card-dispositivos {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .device-form, .device-list {
+        margin-top: 20px;
+    }
+    
+    input {
+        width: 100%;
+        padding: 8px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    button {
+        padding: 10px 15px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        background-color: #0056b3;
+    }
+    
+    .alert {
+        padding: 10px;
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+        margin-bottom: 20px;
+        border-radius: 4px;
+    }
+    
+    .device-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        border: 1px solid #ddd;
+        margin-top: 10px;
+        border-radius: 4px;
+    }
+    

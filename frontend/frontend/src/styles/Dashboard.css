@@ -1,0 +1,112 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+  width: calc(100vw - 100px); /* Resta el ancho del menú lateral */
+  margin-left: 100px; /* Añade un margen izquierdo igual al ancho del menú */
+  background-color: #2b2f42;
+  flex-direction: column; /* Mantener los elementos apilados */
+  overflow: hidden; /* Evita el desbordamiento */
+  overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado largo */
+  padding: 20px; /* Añade un padding general para separar el contenido de los bordes */
+}
+
+/* Contenedor para la gráfica y la tarjeta de estadísticas */
+.chart-and-stats-container {
+  display: flex;
+  justify-content: flex-start; /* Alinea los elementos a la izquierda */
+  align-items: stretch; /* Asegura que ambos tengan la misma altura */
+  width: 100%;
+  max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 20px 0; /* Elimina el margen automático para centrar */
+  gap: 20px; /* Espacio entre la gráfica y la tarjeta */
+}
+/* Ajustes para la gráfica */
+.chart-wrapper {
+  flex: 1; /* La gráfica ocupa el espacio restante */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Ajustes para la tarjeta de estadísticas */
+.machine-stats-container {
+  width: 300px; /* Ancho fijo para la tarjeta */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+}
+
+.dashboard-content {
+  flex: 1; /* Esto hace que el contenido ocupe el resto del espacio */
+  padding: 20px; /* Añade un poco de padding para evitar que el contenido toque los bordes */
+}
+
+.dashboard-image-container {
+  margin-left: 0; /* Elimina el margen izquierdo */
+}
+
+.dashboard-image {
+  width: 32%; /* La imagen ocupará el 40% del ancho disponible */
+  max-width: 80%; /* La imagen no se desbordará */
+  max-height: 80%; /* La imagen no se desbordará */
+  object-fit: cover; /* Mantiene la proporción de la imagen */
+  margin-top: -40px;
+}
+
+/* Contenedor para las dos gráficas (DowntimeCharts y CustomLineChart) */
+.charts-row {
+  display: flex;
+  justify-content: space-between; /* Espacio entre las gráficas */
+  align-items: stretch; /* Asegura que ambas gráficas tengan la misma altura */
+  width: 100%;
+  max-width: 1200px; /* Ajusta el ancho máximo según sea necesario */
+  margin: 20px 0; /* Espacio arriba y abajo */
+  gap: 20px; /* Espacio entre las gráficas */
+}
+
+/* Ajustes para cada gráfica dentro del contenedor */
+.charts-row > * {
+  flex: 1; /* Cada gráfica ocupa el mismo espacio */
+  background-color: #353a50; /* Fondo para las gráficas */
+  border-radius: 10px; /* Bordes redondeados */
+  padding: 20px; /* Espaciado interno */
+}
+
+/* Si quieres mantener la estructura fija cuando agregues más elementos */
+.dashboard-container > * {
+  margin-bottom: 20px; /* Añadir algo de espacio entre cada componente */
+}
+
+.dashboard-container > *:last-child {
+  margin-bottom: 0; /* Elimina el margen inferior del último elemento */
+}
+
+/* Estilos opcionales de responsividad (si quieres que la estructura cambie en pantallas pequeñas) */
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column; /* Se asegura que se mantenga en columna */
+    margin-left: 0; /* Elimina el margen izquierdo en pantallas pequeñas */
+    width: 100vw; /* Ocupa el 100% del ancho en pantallas pequeñas */
+    padding: 10px; /* Reduce el padding en pantallas pequeñas */
+  }
+
+  .chart-and-stats-container {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    gap: 10px; /* Reduce el espacio entre la gráfica y la tarjeta */
+  }
+
+  .machine-stats-container {
+    width: 100%; /* La tarjeta ocupa todo el ancho en pantallas pequeñas */
+  }
+
+  .dashboard-image-container {
+    margin-left: 0; /* Eliminar el margen en pantallas pequeñas */
+  }
+
+  .charts-row {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    gap: 10px; /* Reduce el espacio entre las gráficas */
+  }
+
+  .charts-row > * {
+    width: 100%; /* Cada gráfica ocupa todo el ancho en pantallas pequeñas */
+  }
+}

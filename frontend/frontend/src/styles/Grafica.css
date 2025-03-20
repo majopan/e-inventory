@@ -1,0 +1,49 @@
+/* Contenedor de la gráfica */
+.chart-wrapper {
+    display: flex;
+    justify-content: flex-start; /* Alinea la gráfica a la izquierda */
+    width: 100%;
+    padding: 20px; /* Añade padding alrededor del contenedor de la gráfica */
+}
+
+/* Estilos para el contenedor del gráfico de barras */
+.barchart-container {
+    background-color: #353a50; /* Fondo oscuro para el contenedor */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    color: #fff; /* Color del texto */
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 900px; /* Ancho máximo para la gráfica */
+    margin: 0; /* Elimina el margen negativo */
+}
+
+/* Título de la gráfica */
+.barchart-container h3 {
+    text-align: center; /* Centra el título */
+    color: #61dafb; /* Color del título */
+    margin-bottom: 15px; /* Espacio debajo del título */
+}
+
+/* Estilos para la cuadrícula del gráfico */
+.recharts-cartesian-grid line {
+    stroke: rgba(255, 255, 255, 0.315); /* Color de las líneas de la cuadrícula */
+}
+
+/* Estilos para el tooltip (información emergente) */
+.recharts-tooltip-wrapper {
+    background-color: #222 !important; /* Fondo del tooltip */
+    border: 1px solid #61dafb !important; /* Borde del tooltip */
+    color: #fff !important; /* Color del texto del tooltip */
+}
+
+/* Estilos para la leyenda del gráfico */
+.recharts-legend-item text {
+    fill: #61dafb !important; /* Color del texto de la leyenda */
+    font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilos para las barras del gráfico */
+.recharts-bar-rectangle {
+    stroke-width: 2; /* Grosor del borde de las barras */
+}

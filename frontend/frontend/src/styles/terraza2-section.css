@@ -1,0 +1,160 @@
+    .terraza2-container {
+        width: 700px;
+        border: 1px solid black;
+    }
+    
+    .terraza2-header {
+        border-bottom: 1px solid black;
+        padding: 2px 8px;
+    }
+    
+    .est-indicator {
+        text-align: right;
+        font-size: 12px;
+    }
+    
+    .terraza2-content {
+        padding: 4px;
+    }
+    
+    .terraza2-title {
+        background-color: #f97316;
+        text-align: center;
+        padding: 2px;
+        font-weight: bold;
+        margin-bottom: 8px;
+    }
+    
+    .top-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+    
+    .left-e-numbers {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    
+    .e-row {
+        display: flex;
+        gap: 2px;
+    }
+    
+    .e-cell {
+        border: 1px solid black;
+        padding: 2px 4px;
+        font-size: 12px;
+        text-align: center;
+        flex: 1;
+    }
+    
+    .e-single {
+        border: 1px solid black;
+        padding: 2px 4px;
+        font-size: 12px;
+        width: 50px;
+    }
+    
+    .center-section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .ti-label {
+        font-size: 14px;
+    }
+    
+    .datacenter-label {
+        text-align: center;
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    
+    .employee-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    
+    .employee-row {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+    
+    .left-numbers {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        min-width: 45px;
+    }
+    
+    .left-number {
+        font-size: 12px;
+        padding: 2px;
+    }
+    
+    .employee-name {
+        width: 120px;
+        font-size: 12px;
+    }
+    
+    .number-group {
+        display: flex;
+        gap: 2px;
+    }
+    
+    .orange-number {
+        background-color: #f97316;
+        color: white;
+        font-size: 10px;
+        padding: 2px 4px;
+        text-align: center;
+        min-width: 30px;
+    }
+    
+    .green-numbers-terraza2 {
+        display: flex;
+        gap: 2px;
+    }
+    
+    .green-number-terraza2 {
+        background-color: #22c55e;
+        color: white;
+        font-size: 10px;
+        padding: 2px 4px;
+        text-align: center;
+        min-width: 30px;
+    }
+    
+    .bottom-names {
+        display: flex;
+        justify-content: space-between;
+        margin: 8px 0;
+        font-size: 12px;
+        padding: 0 16px;
+    }
+    
+    .bottom-numbers {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 2px;
+    }
+    
+    .number-cell-terraza2 {
+        background-color: #22c55e;
+        color: white;
+        font-size: 10px;
+        padding: 2px 4px;
+        text-align: center;
+    }
+    
+    .mt-2 {
+        margin-top: 8px;
+    }
+    
+    

@@ -1,0 +1,66 @@
+.crud-overview-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1f36, #2b2d50);
+    padding: 40px;
+}
+
+.crud-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.crud-card {
+    background: linear-gradient(145deg, #3a3b54, #23243c);
+    border: 1px solid #444657;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: white;
+    cursor: pointer;
+}
+
+.crud-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.crud-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.crud-icon-container {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-bottom: 16px;
+}
+
+.icon {
+    font-size: 36px;
+    color: #4ea8de;
+}
+
+.crud-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.crud-description {
+    font-size: 0.875rem;
+    color: #cfcfcf;
+}

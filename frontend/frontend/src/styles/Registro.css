@@ -1,0 +1,52 @@
+.registro-container {
+    display: flex;
+    height: 100vh; /* Ocupa el 100% de la altura de la ventana */
+    width: calc(100vw - 100px); /* Resta el ancho del menú lateral */
+    margin-left: 100px; /* Añade un margen izquierdo igual al ancho del menú */
+    background-color: #2b2f42;
+    flex-direction: column; /* Mantener los elementos apilados */
+    overflow: hidden; /* Evita el desbordamiento */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es demasiado largo */
+    padding: 20px; /* Añade un padding general para separar el contenido de los bordes */
+  }
+  
+  .registro-image-container {
+    margin-left: 0; /* Elimina el margen izquierdo */
+  }
+  
+  .registro-content {
+    flex: 1; /* Esto hace que el contenido ocupe el resto del espacio */
+    position: relative; /* Esto ayudará a prevenir la sobreposición */
+    margin-left: -60px;
+  }
+  
+  .registro-image {
+    width: 30%; /* La imagen ocupará el 40% del ancho disponible */
+    max-width: 80%; /* La imagen no se desbordará */
+    max-height: 80%; /* La imagen no se desbordará */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+  }
+  
+  .records-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: calc(100vw - 100px);
+    margin-left: 50px; /* Ajustado el margen para moverlo hacia la izquierda */
+    background-color: #2b2f42;
+    padding: 20px;
+    color: #fff;
+    overflow-y: auto;
+    position: relative; /* Asegura que no haya solapamientos */
+  }
+  
+  .records-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .records-image {
+    max-width: 100%;
+    height: auto;
+  }
+  

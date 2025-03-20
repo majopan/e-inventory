@@ -1,0 +1,58 @@
+/* Contenedor de las cards en fila */
+.cards-container {
+    display: flex;
+    margin-top: 30px; /* Espacio entre la imagen y las cards */
+    width: 100%; /* Las cards ocupan el 100% del ancho disponible */
+    gap: 20px; /* Espacio entre las cards */
+    padding: 0 20px; /* Añade un poco de padding a los lados */
+    margin-left: -20px; /* Mueve el contenedor 10px hacia la izquierda */
+}
+
+/* Estilos para cada card */
+.card {
+    background-color: #353a50; /* Fondo oscuro para la card */
+    border-radius: 20px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    width: 100%; /* Las cards ocupan el 100% del ancho disponible */
+    max-width: 300px; /* Ancho máximo para cada card */
+    position: relative; /* Permite el posicionamiento absoluto del icono */
+}
+
+/* Estilos para el título de la card */
+.card h5 {
+    font-size: 16px; /* Tamaño de la fuente del título */
+    color: #fff; /* Color del texto */
+    margin-bottom: 10px; /* Espacio debajo del título */
+}
+
+/* Estilos para el valor de la card */
+.card h1 {
+    font-size: 35px; /* Tamaño de la fuente del valor */
+    color: #fff; /* Color del texto */
+    margin: 5px 0; /* Espacio alrededor del valor */
+}
+
+/* Estilos para el texto adicional de la card */
+.card p {
+    font-size: 14px; /* Tamaño de la fuente del texto adicional */
+    color: #fff; /* Color del texto */
+    margin: 5px 0; /* Espacio alrededor del texto */
+    text-align: right; /* Alinea el texto a la derecha */
+}
+
+/* Estilos para el icono en la parte superior derecha de la card */
+.card-icon {
+    position: absolute;
+    border-radius: 8px; /* Bordes redondeados para el icono */
+    top: 10px; /* Ajusta la distancia desde el borde superior */
+    right: 10px; /* Ajusta la distancia desde el borde derecho */
+    width: 40px; /* Tamaño del icono */
+    height: 40px; /* Tamaño del icono */
+    background-color: #61dafb; /* Fondo del icono */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; /* Color del ícono */
+    font-size: 20px; /* Tamaño del ícono */
+}

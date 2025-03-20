@@ -1,0 +1,59 @@
+/* SidebarMenu.css */
+
+/* Contenedor del Sidebar */
+.sidebar {
+    width: 100px; /* Ancho fijo del menú lateral */
+    height: 100vh; /* Asegura que el sidebar ocupe toda la altura de la pantalla */
+    background-color: #353a50; /* Color de fondo del menú */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px; /* Espacio en la parte superior */
+    position: fixed; /* Fija el sidebar a la izquierda */
+    left: 0; /* Asegura que el menú esté pegado a la izquierda */
+    top: 0; /* Asegura que el menú esté pegado a la parte superior */
+    z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
+}
+
+/* Estilo de cada ítem del menú */
+.menu-item {
+    width: 100%;
+    padding: 15px 0; /* Espaciado interno para cada ítem */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff; /* Color del texto */
+    font-size: 14px; /* Tamaño de la fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: 0.3s; /* Transición suave para efectos hover */
+    text-align: center; /* Centra el texto */
+}
+
+/* Resaltar el ítem activo */
+.menu-item.active {
+    color: #a48bef; /* Cambia el color del texto para el ítem activo */
+}
+
+/* Efecto hover para los ítems */
+.menu-item:hover {
+    color: #a48bef; /* Cambia el color del texto al pasar el mouse */
+}
+
+/* Línea divisoria */
+.divider {
+    width: 60%; /* Ancho de la línea divisoria */
+    height: 1px; /* Grosor de la línea */
+    background-color: #555; /* Color de la línea */
+    margin: 10px 0; /* Espacio alrededor de la línea */
+}
+
+/* Diseño responsivo para que el ícono y el texto estén alineados */
+.menu-item span {
+    margin-top: 5px; /* Espacio entre el ícono y el texto */
+    font-size: 12px; /* Tamaño de la fuente del texto */
+}
+
+/* Asegurarse de que los iconos y el texto no se solapen */
+.menu-item svg {
+    margin-bottom: 5px; /* Espacio debajo del ícono */
+}
